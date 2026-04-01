@@ -46,6 +46,16 @@ iframe#tela {
     
 }
 
+section#redes-sociais {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section#redes-sociais img {
     width: 50px;
     height: 50px;
@@ -53,4 +63,12 @@ section#redes-sociais img {
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.767);
     transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    transform: scale(1.2);
+    border: 2px solid rgba(255, 255, 255, 0.651);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.767);
 }
